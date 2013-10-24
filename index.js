@@ -1,8 +1,13 @@
-module.exports = function(el, callback) {
+module.exports = function(el, setHeight, callback) {
+    setHeight = setHeight || false;
     function getHeight() {
+        var oldHeight = el.style.height;
         el.style.height = "";
-        var height = Math.min(el.scrollHeight, 300);
-        el.style.height = height + "px";
+        var height = el.scrollHeight;
+        if(setHeight)
+            el.style.height = height + "px";
+        else
+            el.style.height = oldHeight + "px";
         return height;
     }
     if(callback) {
@@ -11,6 +16,5 @@ module.exports = function(el, callback) {
         }, false); 
     } else {
         return getHeight();
-    }
-    
+    }   
 }
