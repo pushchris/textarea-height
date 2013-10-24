@@ -1,0 +1,14 @@
+{
+  "name": "textarea-height",
+  "repo": "whyohwhyamihere/textarea-height",
+  "description": "Component to return textarea height on content change",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}
