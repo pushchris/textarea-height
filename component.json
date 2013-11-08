@@ -3,7 +3,7 @@
   "repo": "whyohwhyamihere/textarea-height",
   "description": "Component to return textarea height on content change",
   "version": "0.0.2",
-  "keywords": [],
+  "keywords": ["textarea", "height"],
   "dependencies": {},
   "development": {},
   "license": "MIT",
